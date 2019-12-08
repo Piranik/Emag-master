@@ -10,3 +10,4 @@ driver.find_element_by_id("searchboxTrigger").send_keys("monitor")
 driver.find_element_by_css_selector('#masthead > div > div > div.navbar-searchbox > div > form > div.input-group.searchbox-input > div.input-group-btn > button.btn.btn-default.searchbox-submit-button').click()
 
 driver.implicitly_wait(3)
+
