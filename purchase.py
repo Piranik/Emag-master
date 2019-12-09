@@ -6,6 +6,7 @@ import chromedriver_binary
 
 driver = webdriver.Chrome()
 
+#step 1/4 purchase area
 driver.get("https://www.emag.ro/user/login?ref=hdr_login_btn")
 driver.maximize_window()
 
@@ -46,5 +47,5 @@ driver.find_element_by_xpath('//*[@id="paymentSection"]/div[4]/ul/li[1]/div[1]/l
 driver.execute_script("window.scrollTo(0, 19020)")
 driver.implicitly_wait(5)
 #driver.find_element_by_link_text('Pasul urmator').click()
-driver.find_element_by_xpath('/html/body/div[1]/div/form/div/div[1]/div[7]/div/div[3]/button').click()
+driver.find_element_by_xpath("/html/body/div[1]/div/form/div/div[1]/div[7]/div/div[3]/button").click()
 

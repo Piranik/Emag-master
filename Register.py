@@ -1,9 +1,11 @@
 from selenium import webdriver
+from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import NoSuchElementException
 import chromedriver_binary
 
 driver = webdriver.Chrome()
+driver.maximize_window()
 
 #def emag_register():
 driver.get("https://www.emag.ro/user/login?ref=hdr_signup_btn")
@@ -17,9 +19,16 @@ driver.find_element_by_id("r_password").send_keys("password123")
 driver.find_element_by_id("r_password_confirmation").send_keys("password123")
 driver.implicitly_wait(3)
 
-driver.find_element_by_class_name("gui-form-control -wide -checkboxes tiny-margin").click()
-#driver.find_element_by_xpath("/html/body/form/div[5]/div/label").click()
-#driver.find_element_by_id("agree_terms").context_click()
+driver.find_element_by_xpath("/html/body/form/div[6]").click()
+
+#element = driver.find_element_by_xpath("/html/body/form/div[5]")
+actions = ActionChains(driver)
+#actions.move_to_element(element).click(element).perform()
+actions.move_by_offset(802,550).click().perform()
+
+driver.find_element_by_xpath("/html/body/form/div[7]/div/button").click()
+
+#I don't know how to pass robot check
 
 #for i in range(20):
     #try:
@@ -31,10 +40,4 @@ driver.find_element_by_class_name("gui-form-control -wide -checkboxes tiny-margi
 #else:
   #  print ('test failed')
 
-#checkboxElement = driver.find_element_by_id("agree_terms")
-#checkboxElement.click()
-
-#driver.find_element_by_id("agree_terms").click()
-#driver.find_element_by_id("agree_terms").is_selected()
-#driver.find_element_by_id("subsribe_newlsetter").click()
 
