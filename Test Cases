@@ -1,0 +1,58 @@
+Register
+Steps:
+  1) Go to Login https://www.emag.ro/user/login?ref=hdr_signup_btn
+  2) Use a new e-mail address example@a.com
+  3) Use a valid name, password, password confirmation
+  4) Agree to terms
+  5) Submit
+  
+Login
+Steps:
+  1) Go to Login https://www.emag.ro/user/login?ref=hdr_signup_btn
+  2) Use your e-mail address example@a.com
+  3) Use the correct password
+  4) Submit
+
+Search Valid/Invalid
+Steps:
+  1) Go to https://www.emag.ro/homepage#opensearch
+  2) Type a Valid/Invalid querry
+  3) Check results
+
+Add to cart Valid/Invalid
+Steps:
+  1) Login with an existing user
+  2) Type a Valid/Invalid querry
+  3) Check results
+  4) Select add to cart on the first result
+  5) Check cart contents
+  
+Order
+Steps:
+  1) Login with an existing user
+  2) Type a Valid/Invalid querry
+  3) Check results
+  4) Select add to cart on the first result
+  5) Check cart contents
+  6) Proceed to checkout
+  7) Select a valid address
+  8) Select payment method
+  9) Proceed to the next step
+Requires a valid test environment with Sandbox payment method
+
+Empty your cart
+Steps:
+  1) Login with an existing user
+  2) Check cart
+  3) Delete contents using the already present function
+  4) Return to the home page
+  5) Check cart contents
+  
+Add to favorites
+Steps:
+  1) Login with an existing user
+  2) Type a Valid querry
+  3) Open the page of the first product
+  4) Add to favorites
+
+  

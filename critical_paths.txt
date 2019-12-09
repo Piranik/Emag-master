@@ -1,9 +1,7 @@
 Register
 Login
 Search (valid/invalid)
-Add question (valid/invalid)
 Add to cart / Remove from cart
-Add card to your account (valid/invalid)
+Purchase
 Add to Favorites
 Remove from Favorites
-Checkout
